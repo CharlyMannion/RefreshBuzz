@@ -19,6 +19,9 @@ describe("FizzBuzz", function() {
       it("returns Buzz when the number is 5", function() {
           expect(fizzBuzz.play(5)).toEqual('Buzz');
       });
+      it("returns Buzz when the number is a multiple of 5", function() {
+          expect(fizzBuzz.play(40)).toEqual('Buzz');
+      })
   });
   
 })

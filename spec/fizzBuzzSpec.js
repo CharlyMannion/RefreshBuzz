@@ -21,7 +21,13 @@ describe("FizzBuzz", function() {
       });
       it("returns Buzz when the number is a multiple of 5", function() {
           expect(fizzBuzz.play(40)).toEqual('Buzz');
-      })
+      });
+  });
+
+  describe("multiples of five and three", function() {
+      it("returns FizzBuzz when the number is fifteen", function() {
+          expect(fizzBuzz.play(15)).toEqual('FizzBuzz');
+      });
   });
   
 })

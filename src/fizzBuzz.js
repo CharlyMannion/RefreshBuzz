@@ -8,5 +8,7 @@ FizzBuzz.prototype.play = function(number) {
         return 'Fizz';
     } else if (number % 5 === 0) {
         return 'Buzz';
-    };
+    } else {
+        return number;
+    }
 };

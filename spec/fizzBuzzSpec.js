@@ -29,5 +29,11 @@ describe("FizzBuzz", function() {
           expect(fizzBuzz.play(15)).toEqual('FizzBuzz');
       });
   });
+
+  describe("ordinary numbers", function() {
+      it("returns the number if number is not significant", function() {
+          expect(fizzBuzz.play(2)).toEqual(2);
+      });
+  });
   
 })
